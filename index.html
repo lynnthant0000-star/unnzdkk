@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memo Website</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>This is About</h1>
+  <p>U Nyi Nyi Zaw & Daw Kyaing Kyaing</p>
+
+  <button onclick="sayHello(); openPopup();">Click Me</button>
+ 
+ <!-- Popup -->
+  <div id="popup" class="popup">
+
+  <button class="arrow left" onclick="prevImage()">⬅</button>
+  <div class="content">
+    <img id="popupImg" class="popup-img">
+    <p id="popupText" class="popup-text"></p>
+  </div>
+
+  <button class="arrow right" onclick="nextImage()">➡</button>
+
+  <br><br>
+
+  <button onclick="closePopup()">Close</button>
+
+  </div>
+  <br><br>
+
+  <!-- ✅ Photo now appears under the button -->
+  <img src="photo.jpg" alt="My Photo" class="main-photo">
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
